@@ -13,8 +13,8 @@ pipeline {
      
     stage('Build') {
       steps {
-        sh 'npm install'
-         sh '<<Build Command>>'
+        sh 'npm i -g serverless'
+         sh 'serverless init fullstack-app'
       }
     }  
     
