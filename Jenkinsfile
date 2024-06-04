@@ -13,9 +13,9 @@ pipeline {
      
     stage('Build') {
       steps {
-      
-  
-            bat "cd site && serverless init fullstack-app"
+            bat "cd site"
+         bat " npm install"
+           bat " npm run build"
       }
     }  
     
