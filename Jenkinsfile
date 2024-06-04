@@ -14,7 +14,7 @@ pipeline {
     stage('Build') {
       steps {
       
-        bat 'serverless init fullstack-app'
+  
             bat "cd site && serverless init fullstack-app"
       }
     }  
