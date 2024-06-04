@@ -7,7 +7,7 @@ pipeline {
         
     stage('Git') {
       steps {
-        git 'https://github.com/netomixs/desplegar'
+        git 'https://github.com/netomixs/desplegar.git'
       }
     }
      
