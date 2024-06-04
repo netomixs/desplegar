@@ -13,8 +13,9 @@ pipeline {
      
     stage('Build') {
       steps {
- 
+     def subDir = 'site'
         bat 'serverless init fullstack-app'
+            bat "cd ${subDir} && serverless init fullstack-app"
       }
     }  
     
