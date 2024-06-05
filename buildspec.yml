@@ -10,7 +10,8 @@ phases:
       - npm set progress=false
       - npm set maxsockets=1
       - npm install
+      - npm i -g serverless
   build:
     commands:
-      - serveless deploy
+      - serverless deploy
 
