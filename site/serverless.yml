@@ -1,6 +1,5 @@
 
 service: front
-frameworkVersion: '3'
 provider:
   name: aws
   stage: dev
