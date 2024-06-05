@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - cd path/to/subfolder
+      - npm install --no-progress --silent
+  build:
+    commands:
+      - cd path/to/subfolder
+      - npm run lint
+      - npm test
