@@ -4,8 +4,8 @@ phases:
   pre_build:
     commands:
       - cd site
-      - npm install
       - npm cache clean --force
+      - npm install
   build:
     commands:
       - cd site
