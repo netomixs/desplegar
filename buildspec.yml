@@ -11,5 +11,5 @@ phases:
   build:
     commands:
    
-      - echo ${env:aws_access_key_id}
+      - echo $aws_access_key_id
 
