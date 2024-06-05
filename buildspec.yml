@@ -10,6 +10,6 @@ phases:
       - npm i -g serverless
   build:
     commands:
-      - serverless deploy
+   
       - echo "hol mundo"
 
