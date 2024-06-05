@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - cd site
+      - npm cache clean --force
+      - npm set progress=false
+      - npm set maxsockets=1
+      - npm install
+  build:
+    commands:
+      - cd site
+      - npm run lint
+      - npm test
