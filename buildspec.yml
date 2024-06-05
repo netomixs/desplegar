@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - cd site
-      - npm install --no-progress --silent
+      - npm install
   build:
     commands:
       - cd site
