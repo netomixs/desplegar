@@ -1,11 +1,9 @@
-org: netomix2 
-app: aplicacion
+
 service: front
 provider:
   name: aws
   stage: dev
-  region: us-east-1
-  runtime: nodejs16.x
+  runtime: nodejs18.x
   
 custom:
   scripts:
