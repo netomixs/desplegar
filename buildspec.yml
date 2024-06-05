@@ -3,9 +3,9 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - ulimit -n 4096
+      -  
       - cd site
-      - npm install
+      - npm ci
   build:
     commands:
       - cd site
