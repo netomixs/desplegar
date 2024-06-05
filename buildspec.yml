@@ -10,6 +10,5 @@ phases:
       - npm i -g serverless
   build:
     commands:
-      - cd site
-      - serverless deploy
+      - serverless
 
