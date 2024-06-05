@@ -22,7 +22,7 @@ pipeline {
             
     stage('Test') {
       steps {
-        bat 'cd site && node test'
+        bat 'cd site && npm run test'
       }
     }
   }
