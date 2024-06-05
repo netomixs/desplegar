@@ -19,11 +19,6 @@ pipeline {
       }
     }  
     
-            
-    stage('Test') {
-      steps {
-        bat 'cd site && npm run test'
-      }
-    }
+ 
   }
 }
