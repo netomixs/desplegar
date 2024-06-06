@@ -19,13 +19,13 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18'  # Reemplaza con la versión de Node.js que uses
+        node-version: '20'  # Reemplaza con la versión de Node.js que uses
 
     - name: Install dependencies
-      run: npm install
+      run: cd site && npm install
 
     - name: Lint code
-      run: npm run lint
+      run: cd site && npm run lint
 
     - name: Run unit tests
-      run: npm test
+      run: cd site && npm test
