@@ -17,11 +17,12 @@ export default class App extends Component {
   }
 
   async componentDidMount() {
-    // console.log(getSession())
+   
   }
 
   render() {
     return (
+      /* eslint-disable */
       <Router>
         <Switch>
 
@@ -41,6 +42,7 @@ export default class App extends Component {
 
         </Switch>
       </Router>
+      /* eslint-enable */
     )
   }
 }
@@ -54,5 +56,8 @@ const PrivateRoute = ({ component, ...options }) => {
   const session = getSession()
 
   const finalComponent = session ? Dashboard : Home
+  /* eslint-disable */
+
   return <Route {...options} component={finalComponent} />
+  /* eslint-enable */
 }
