@@ -9,7 +9,6 @@ A complete, serverless, full-stack application built on AWS Lambda, AWS HTTP API
 
 Install the latest version of the Serverless Framework:
 
-
 ```
 npm i -g serverless
 ```
